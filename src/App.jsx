@@ -1,26 +1,38 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import logo from './logo.svg'
+
+import './css/custom-properties.css'
+import styles from './App.module.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className={styles.App}>
+      <header className={styles[`App-header`]}>
+        <img
+          alt="chris woz here"
+          className={styles[`App-logo`]}
+          src={logo}
+        />
         <p>
-          Edit <code>src/App.jsx</code> and save to reload.
+          Edit 
+          {' '}
+          <code>src/App.jsx</code>
+          {' '}
+and save to reload.
         </p>
         <a
-          className="App-link"
+          className={styles[`App-link`]}
           href="https://reactjs.org"
-          target="_blank"
           rel="noopener noreferrer"
+          target="_blank"
         >
-          Learn React
+          <span className={styles.nested}>
+            Learn React
+          </span>
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,5 +1,11 @@
+$green: green;
+
 .App {
   text-align: center;
+
+  &:hover {
+    text-align: left;
+  }
 }
 
 .App-logo {
@@ -25,7 +31,11 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--green);
+
+  .nested {
+    padding-top: 5rem;
+  }
 }
 
 @keyframes App-logo-spin {
