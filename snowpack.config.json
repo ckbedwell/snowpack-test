@@ -1,10 +1,7 @@
 {
   "extends": "@snowpack/app-scripts-react",
-  "scripts": {
-    "build:css": "postcss",
-    "build:js": "@snowpack/plugin-babel"
-  },
+  "scripts": {},
   "plugins": [
-    ["@snowpack/plugin-webpack", {}]
+    "@snowpack/plugin-webpack"
   ]
 }
